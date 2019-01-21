@@ -12,7 +12,7 @@ an Easy-to-use tooltip system that has a nice interface for both users and devel
 ### 1. Import two files to your project:
 
 on any workflow you're working, you may have access to load some files into it.
-so include **css** and **js** of *tipIt* ( you've included jQuery already ). but there's just one point:
+so include **css** and **js** of *tipIt*. but there's just one point:
 
 > If you want to use automatic tooltip making, you should put the script tag before closing `</body>`
 
@@ -66,7 +66,7 @@ if you wanna make tooltips on your own timing ( like, after some ajax loaded and
 
 ```
 
-$( 'div' ).tipit();
+someElement.tipit();
 
 ```
 You have to write configs of that element as mentioned [here](#2-add-some-config)
@@ -77,8 +77,8 @@ automatically or manually, tooltips got made. now you've access to two methods:
 
 ```
 
-$( 'div' )[ 0 ].showTipit();
-$( 'div' )[ 0 ].hideTipit();
+someElement.showTipit();
+someElement.hideTipit();
 
 ```
 
