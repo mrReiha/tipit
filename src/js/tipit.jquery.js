@@ -5,14 +5,20 @@
  * @description Easy-to-use tooltip system
  *
  * @author Reiha Hosseini ( @mrReiha )
- * @version v0.1.5
+ * @version v0.0.4
  * @since 2015/01
  *
  * @dependency jQuery
  *
- * @license GPL
+ * @license MIT
  */
-;!( function( w, d ) {
+;!( function( w, d, f ) {
+
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory( w, d ) :
+	typeof define === 'function' && define.amd ? define( [ 'exports' ], factory ) :
+	( w = w || self, factory( w, d ) );
+
+}( this, document, function( w, d ) {
 
 	// :D
 	'use strict';
@@ -125,4 +131,4 @@
 
 	});
 
-})( this, document );
+}));

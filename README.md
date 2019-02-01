@@ -1,8 +1,6 @@
 ![no dependency](https://img.shields.io/badge/no-dependency-green.svg)
 ![+jQuery plugin](https://img.shields.io/badge/+-jQuery%20plugin%20included-blue.svg)
 
-> Since the other version at [anetwork/tipit](https://github.com/anetwork/tipit) is not maintaining anymore, I make new changes to this repository. Consider this repo as **main**.
-
 # tipIt
 
 an Easy-to-use tooltip system that has a nice interface for both users and developers!
@@ -24,7 +22,7 @@ sample:
 
         <!-- .... -->
 
-        <link rel="stylesheet" href="css/tipit.css" />
+        <link rel="stylesheet" href="dist/css/tipit.css" />
 
         <!-- .... -->
 
@@ -34,11 +32,39 @@ sample:
 
         <!-- .... -->
 
-        <script src="js/tipit.js"></script>
+        <script src="dist/js/tipit.js"></script>
 
     </body>
 
 ```
+
+using **NPM**:
+
+```
+
+npm i tipit-native
+
+```
+
+```
+
+makeTipit = require( 'tipit-native' );
+
+// or
+
+import makeTipit from 'tipit-native';
+
+```
+
+and for css files ( [stylus](http://stylus-lang.com/) syntax ):
+
+```
+
+@require 'path-to-node_modules/tipit-native/dist/css/tipit.css'
+
+```
+
+or any other workflow you're using. Just make sure relative css file is included in your page.
 
 ### 2. Add some config:
 
@@ -66,9 +92,15 @@ if you wanna make tooltips on your own timing ( like, after some ajax loaded and
 
 ```
 
+// native version
+makeTipit( someElement );
+
+
+// jQuery version
 someElement.tipit();
 
 ```
+
 You have to write configs of that element as mentioned [here](#2-add-some-config)
 
 ## API
@@ -83,3 +115,5 @@ someElement.hideTipit();
 ```
 
 to force visibility of a tooltip.
+
+> Since the other version at [anetwork/tipit](https://github.com/anetwork/tipit) is not maintaining anymore, I make new changes to this repository. Consider this repo as **main**.

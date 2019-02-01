@@ -1,6 +1,6 @@
 {
-  "name": "tipit",
-  "version": "0.0.2",
+  "name": "tipit-native",
+  "version": "0.0.4",
   "description": "Easy-to-use tooltip system",
   "main": "src/js/tipit.js",
   "devDependencies": {
@@ -10,13 +10,20 @@
     "gulp-watch": "^4.2.4",
     "gulp-stylus": ""
   },
+  "homepage": "https://mrreiha.github.io/tipit/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anetwork/tipit.git"
+    "url": "https://github.com/mrreiha/tipit.git"
   },
+  "files": [
+    "dist/js/*",
+    "dist/css/*",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "tooltip",
     "tipit",
@@ -26,5 +33,5 @@
     "css"
   ],
   "author": "Reiha Hosseini",
-  "license": "GPL-3.0"
+  "license": "MIT"
 }
